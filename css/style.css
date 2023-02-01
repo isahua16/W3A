@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 80px;
+  clip-path: circle(35% at 50% 50%);
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+
+footer {
+  background-color: darkkhaki;
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  flex: 0 0 auto;
+}
+.card:hover {
+  box-shadow: none;
+}
+#header {
+  padding: 10px 10px;
+}
+
+#header p {
+  font-style: italic;
+}
+
+.card {
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.joke_prompt + p {
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
+h3 ~ img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about > .headshot {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.headshot + p {
+  padding-top: 10px;
+}
+
+.button {
+  padding: 6px 6px;
+  border-radius: 8px;
+}
+
+.button:hover,
+.button:active {
+  box-shadow: none;
+  border-style: inset;
+}
+
+.button {
+  cursor: grab;
+  border-style: outset;
+  border-width: 3px;
+}
